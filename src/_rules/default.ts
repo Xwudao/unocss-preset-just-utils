@@ -25,7 +25,7 @@ import {
 import { rings } from "./ring";
 import { boxShadows } from "./shadow";
 import { aspectRatio, sizes } from "./size";
-import { margins, paddings } from "./spacing";
+import { margins, paddings, spaces } from "./spacing";
 import {
   appearances,
   breaks,
@@ -54,6 +54,7 @@ export const rules: Rule[] = [
   cssVariables,
   cssProperty,
   paddings,
+  spaces,
   margins,
   displays,
   svgUtilities,
