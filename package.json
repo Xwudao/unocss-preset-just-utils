@@ -1,0 +1,49 @@
+{
+  "name": "unocss-preset-just-utils",
+  "version": "0.0.1",
+  "description": "Support just utils for UnoCSS",
+  "author": "Xwudao <apkapb@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/Xwudao/unocss-preset-just-utils",
+  "bugs": {
+    "url": "https://github.com/Xwudao/unocss-preset-just-utils/issues"
+  },
+  "keywords": [
+    "unocss",
+    "unocss-preset",
+    "just-utils"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    },
+    "./*": "./*"
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "*.d.ts",
+    "*.css"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "stub": "unbuild --stub",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@unocss/core": "^0.53.5",
+    "@unocss/preset-mini": "^0.53.5",
+    "fs-extra": "^10.1.0",
+    "unbuild": "^0.7.6"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.13",
+    "@types/node": "^18.16.19",
+    "vitest": "^0.22.1"
+  }
+}
